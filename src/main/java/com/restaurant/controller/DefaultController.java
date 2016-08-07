@@ -12,9 +12,7 @@ import com.restaurant.bean.UserBean;
 public class DefaultController {
 
 	@RequestMapping(method=RequestMethod.GET)
-	public @ResponseBody UserBean getUser(){
-		System.out.println("Inside Controller");
-		
+	public @ResponseBody UserBean getUser(){		
 		UserBean userBean=new UserBean();
 		userBean.setFirstName("Yadab");
 		userBean.setLastName("Nepal");
