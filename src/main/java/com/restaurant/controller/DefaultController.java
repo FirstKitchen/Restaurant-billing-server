@@ -8,18 +8,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.restaurant.bean.UserBean;
 
 @Controller
-@RequestMapping("/hello")
+@RequestMapping("/")
 public class DefaultController {
 
 	@RequestMapping(method=RequestMethod.GET)
 	public @ResponseBody UserBean getUser(){		
-		UserBean userBean=new UserBean();
-		userBean.setFirstName("Yadab");
-		userBean.setLastName("Nepal");
-		userBean.setEmail("samipnepal@gmail.com");
-		userBean.setId("YA001");
-		userBean.setUsername("samipnepal");
-		userBean.setPassword("nepal");
+		UserBean userBean=new UserBean("Yadab","Nepal","samipnepal@gmail.com","YA001","samipnepal","nepal");
 		return userBean;
 	}
 }

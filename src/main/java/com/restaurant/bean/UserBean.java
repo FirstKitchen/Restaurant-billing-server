@@ -43,8 +43,14 @@ public class UserBean {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
-	public UserBean() {
-		// TODO Auto-generated constructor stub
+	public UserBean(String id, String firstName, String lastName, String email, String username, String password) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		this.username = username;
+		this.password = password;
 	}
+
 }
